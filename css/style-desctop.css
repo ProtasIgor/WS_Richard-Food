@@ -1,0 +1,6 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(29, 197, 43);
+    transition: all .3s linear;
+}

@@ -1,0 +1,161 @@
+*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box}input[type=email],input[type=password],input[type=search],input[type=text]{-webkit-appearance:none;-moz-appearance:none}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+h1 {margin: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.container {
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.main {
+    background-image: linear-gradient(to top left,#450E4B, #3C0C41 0 24%, #CF0063 100%);
+}
+
+.main__inner {
+    position: relative;
+
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.main__inner > * {
+    position: relative;
+    grid-area: 1/2;
+}
+
+.main__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__logo {
+    width: 20vw;
+    object-position: center;
+    object-fit: cover;
+}
+
+.main__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.main__list-item {
+    display: block;
+    font-size: 3.5vw;
+}
+
+.main__picture {
+    max-width: 90%;
+    height: 80%;
+    object-position: center;
+    object-fit: contain;
+    align-self: end;
+    justify-self: right;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main__title {
+    margin-bottom: .4em;
+    font-size: 2.2rem;
+}
+
+.main__text {
+    margin-bottom: .4em;
+}
+
+.main__button {
+    padding: 1.25em 2.5em;
+    border-radius: 3px;
+    border: none;
+    background-color: #FC0A7E;
+    color: #fff;
+}
+
+.main__scroll-button {
+    position: absolute;
+    z-index: 1;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+
+    animation: main__scroll-button infinite .8s alternate;
+}
+
+@keyframes main__scroll-button {
+0% {
+    bottom: 7vh;
+}
+50% {
+    bottom: 7vh;
+}
+100% {
+    bottom: 4vh;
+}
+}
+
+/* ----------------------------------------- */
+.blok-app {
+    background-color: #1B1B1B;
+}
+
+.blok-app__inner {
+    min-height: 50vh;
+    display: grid;
+}
+
+.blok-app__inner > * {
+    grid-area: 1/-1;
+}
+
+.blok-app__subtitle {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    color: #A8A8A8;
+}
+
+.blok-app__title{
+    padding-top: 65px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.blok-app__picture {
+    align-self: flex-end;
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+}
